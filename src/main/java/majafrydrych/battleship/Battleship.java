@@ -15,5 +15,6 @@ public class Battleship {
     public static void main(String[] args) {
         FormMode formMode = new FormMode();
         formMode.show();
+        System.out.println("Hello");
     }
 }

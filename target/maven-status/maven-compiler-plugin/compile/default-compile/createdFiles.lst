@@ -1,13 +1,15 @@
+majafrydrych\Client\Logic\Client$1.class
+majafrydrych\Client\Forms\RoomBrowser$1.class
 majafrydrych\Client\Logic\Client.class
 majafrydrych\Client\Forms\ClientConfigForm$2.class
-majafrydrych\battleship\Battleship.class
+majafrydrych\Client\Forms\RoomBrowser.class
+majafrydrych\Client\Forms\RoomBrowser$2.class
 majafrydrych\Common\Forms\FormMode$2.class
 majafrydrych\Server\Forms\ServerStatusForm.class
 majafrydrych\Common\Forms\FormMode.class
 majafrydrych\Server\Forms\ServerConfigForm.class
 majafrydrych\Server\Forms\ServerStatusForm$1.class
 majafrydrych\Client\Forms\ClientConfigForm$1.class
-majafrydrych\Common\DataParsing\ParseHelper.class
 majafrydrych\Server\Forms\ServerConfigForm$2.class
 majafrydrych\Common\Forms\FormMode$1.class
 majafrydrych\Common\Forms\FormMode$3.class

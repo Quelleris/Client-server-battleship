@@ -4,9 +4,9 @@
  */
 package majafrydrych.Server.Forms;
 
+import majafrydrych.Server.Logic.ClientHandler;
+
 import java.net.InetAddress;
-import java.net.ServerSocket;
-import majafrydrych.Server.Logic.Server;
 
 /**
  *
@@ -24,8 +24,7 @@ public class ServerStatusForm extends javax.swing.JFrame {
         this.port = port;
         initComponents();
         
-        LbIPAddress.setText(String.format("Serwer %s: %d", ipAddress, port));
-        
+        LbIPAddress.setText(String.format("Serwer %s: %d", ipAddress, port)); 
     }
 
     private ServerStatusForm() {
@@ -41,39 +40,43 @@ public class ServerStatusForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         LbIPAddress = new javax.swing.JLabel();
         LbPort = new javax.swing.JLabel();
+        LbClients = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Serwer działa!");
+        LbIPAddress.setText("Ip Address");
+
+        LbPort.setText("port");
+
+        LbClients.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(156, 156, 156)
-                .addComponent(jLabel1)
-                .addContainerGap(173, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(28, 28, 28)
                 .addComponent(LbIPAddress)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 265, Short.MAX_VALUE)
                 .addComponent(LbPort)
-                .addGap(100, 100, 100))
+                .addGap(39, 39, 39))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(172, 172, 172)
+                .addComponent(LbClients, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addComponent(jLabel1)
-                .addGap(37, 37, 37)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LbIPAddress)
                     .addComponent(LbPort))
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addGap(107, 107, 107)
+                .addComponent(LbClients, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(168, Short.MAX_VALUE))
         );
 
         pack();
@@ -115,8 +118,8 @@ public class ServerStatusForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LbClients;
     private javax.swing.JLabel LbIPAddress;
     private javax.swing.JLabel LbPort;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
